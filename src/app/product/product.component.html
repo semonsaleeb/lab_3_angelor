@@ -1,0 +1,27 @@
+<div class="container" style="text-align: center;">
+    <div class="row">
+       <div class="col-md-4 my-3" >
+           <div class="card" style="width: 50rem;">
+               <div class="card-body">
+                 <h5 class="card-title">{{selectedItem?.title | uppercase}}</h5>
+                 <p class="card-text">{{selectedItem?.description}}</p>
+                 <h6 class="card-price">{{selectedItem?.price}} $</h6>
+                 <h6 class="card-stock">{{selectedItem?.stock}} </h6>
+                 <p class="card-date">{{selectedItem?.createdAt | date:'MMMM YYYY'}}</p>
+   
+
+
+
+                 <div class="row" >
+                 <div class="column" *ngFor="let img of selectedItem?.images" style="float: left; width: 33.33%; padding: 5px;">
+                 
+                      <img class="d-block w-100" [src]="img" alt="First slide">
+                    </div>
+                   </div>
+                  </div>
+               </div>
+             </div>
+   
+       </div>
+    </div>
+   
