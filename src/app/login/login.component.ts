@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-Name: any;
-  submitProductForm(form:any){
+  Name: any;
+  submitProductForm(form: any) {
     console.log(form);
-    
+
   }
 }

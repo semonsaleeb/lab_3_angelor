@@ -594,10 +594,12 @@ export class ProductComponent {
 
   selectedItem :Products | undefined;
 constructor(private activatedRoute:ActivatedRoute){}
+
 ngOnInit(){
-  console.log(this.activatedRoute.snapshot.params['id']);
-  console.log(this.products.find(product=> product.id == this.activatedRoute.snapshot.params['id']));
+  // console.log(this.activatedRoute.snapshot.params['id']);
+  // console.log(this.products.find(product=> product.id == this.activatedRoute.snapshot.params['id']));
   this.selectedItem=this.products.find(product=> product.id == this.activatedRoute.snapshot.params['id'])
+
 }
 
 

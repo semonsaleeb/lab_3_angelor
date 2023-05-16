@@ -10,6 +10,7 @@ import { RegesterComponent } from './regester/regester.component';
 import { ProductsPipe } from './products.pipe';
 import { FormsModule } from '@angular/forms';
 import { ProductComponent } from './product/product.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { ProductComponent } from './product/product.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

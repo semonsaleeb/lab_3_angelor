@@ -8,7 +8,7 @@ import { ActivatedRoute, Route, Router } from '@angular/router';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
- 
+  selectedItem :Products | undefined;
   
 products:Products[]=[
   {
@@ -598,4 +598,6 @@ redirectOnDetails(id:number){
   this.router.navigate(['product',id])
 
 }
+
+
 }
