@@ -1,23 +1,7 @@
 <div class="container">
- <div class="row">
-    <div class="col-md-4 my-3" *ngFor="let product of products" >
-        <div class="card" style="width: 18rem;">
-            <img [src]="product.thumbnail" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">{{product.title | uppercase}}</h5>
-              <p class="card-text">{{product.description}}</p>
-              <h6 class="card-price">{{product.price}} $</h6>
-              <h6 class="card-stock">{{product.stock}} </h6>
-              <p class="card-date">{{product.createdAt | date:'MMMM YYYY'}}</p>
-              <!-- [routerLink]="[‘movie’, movie.id]” -->
-
-              <button class="btn btn-primary" (click)="redirectOnDetails(product.id)">Show product</button>
-              <button class="btn btn-success">Add to card</button>
-
-            </div>
-          </div>
-
-    </div>
- </div>
-
+  <div class="row">
+      <div *ngFor="let product of products" class="col-md-4">
+          <app-product-card [product]="product"></app-product-card>
+      </div>
+  </div>
 </div>

@@ -11,6 +11,9 @@ import { ProductsPipe } from './products.pipe';
 import { FormsModule } from '@angular/forms';
 import { ProductComponent } from './product/product.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
+import { ProductCardComponent } from './product-card/product-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,13 +23,16 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     RegesterComponent,
     ProductsPipe,
-    ProductComponent
+    ProductComponent,
+    AddToCartComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
 
   ],
   providers: [],

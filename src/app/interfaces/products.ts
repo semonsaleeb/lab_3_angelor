@@ -12,5 +12,8 @@ export interface Products {
         "thumbnail"?: string,
         "images"?:string[],
         "createdAt"?:string,
-      
+        "quantity"?: number;
+        "date": Date;
+
+
 }
